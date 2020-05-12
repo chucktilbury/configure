@@ -1,6 +1,17 @@
 # configure
 This is a configuration library that is intended for use in the Simpler programming language.
 
-This library will include command line parsing, configuration file parsing, and configuration parameters taken from the system environment. The goal is to place all of the configuration in a single user-facing data structure that is filled in from a single function call. The configuration for the library is to be done by filling in a single data structure.
+This is a simple command line parser that uses 2 character options, such as "-x" with an optional
+argument. Command parameters are easy to implement in a single data structure and parameters are
+retrieved by name. See the bottom of configure.c for an example use. Look at the macros in the
+header file for detailed use.
 
-The command line processor is the top priority. It will accept input that looks like "-abc" where it is 3 switch parameters, or where it is a single parameter with an argument. 
+To build the test program:
+
+1. create a directory called "build" (or similar)
+2. CD to that directory
+3. type "cmake .."
+4. type "make"
+
+There should be no operating system dependencies. The test program should work on any system
+via the command line.
