@@ -15,3 +15,10 @@ To build the test program:
 
 There should be no operating system dependencies. The test program should work on any system
 via the command line.
+
+TODO:
+1. Make command options any arbitrary length.
+2. Scan for the "-h" paramter and do not update the default values if found.
+3. Streamline the way that config parameters are accessed.
+4. Add functionality to read parameters from the system environment.
+    4a. Use the system $PATH to find files.
